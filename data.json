@@ -1,0 +1,102 @@
+[
+    {
+        "student_name": "Siam Al Islam",
+        "roll": 1,
+        "cgpa": 3.75
+    },
+    {
+        "student_name": "Ridwan Ahmed",
+        "roll": 2,
+        "cgpa": 3.85
+    },
+    {
+        "student_name": "Mostasim Billah",
+        "roll": 3,
+        "cgpa": 3.65
+    },
+    {
+        "student_name": "faysal Shuvo",
+        "roll": 4,
+        "cgpa": 3.94
+    },
+    {
+        "student_name": "Nusrat Jahan",
+        "roll": 5,
+        "cgpa": 3.75
+    },
+    {
+        "student_name": "Tanvir Ahmed",
+        "roll": 6,
+        "cgpa": 3.55
+    },
+    {
+        "student_name": "Mehedi Hasan",
+        "roll": 7,
+        "cgpa": 3.88
+    },
+    {
+        "student_name": "Farhana Islam",
+        "roll": 8,
+        "cgpa": 3.28
+    },
+    {
+        "student_name": "Rakib Hossain",
+        "roll": 9,
+        "cgpa": 3.95
+    },
+    {
+        "student_name": "Sadia Khan",
+        "roll": 10,
+        "cgpa": 3.72
+    },
+    {
+        "student_name": "Arif Mahmud",
+        "roll": 11,
+        "cgpa": 3.68
+    },
+    {
+        "student_name": "Mim Akter",
+        "roll": 12,
+        "cgpa": 3.88
+    },
+    {
+        "student_name": "Shakib Al Hasan",
+        "roll": 13,
+        "cgpa": 3.54
+    },
+    {
+        "student_name": "Nafisa Tabassum",
+        "roll": 14,
+        "cgpa": 3.77
+    },
+    {
+        "student_name": "Imran Hossain",
+        "roll": 15,
+        "cgpa": 3.82
+    },
+    {
+        "student_name": "Priya Sultana",
+        "roll": 16,
+        "cgpa": 3.66
+    },
+    {
+        "student_name": "Sabbir Rahman",
+        "roll": 17,
+        "cgpa": 3.91
+    },
+    {
+        "student_name": "Tasnim Chowdhury",
+        "roll": 18,
+        "cgpa": 3.73
+    },
+    {
+        "student_name": "Fahim Ahmed",
+        "roll": 19,
+        "cgpa": 3.58
+    },
+    {
+        "student_name": "Laboni Akter",
+        "roll": 20,
+        "cgpa": 3.86
+    }
+]
