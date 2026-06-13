@@ -29,23 +29,32 @@
         </div>
       </div>
 
-      <div class="flex items-center gap-2">
-        <button id="resetBtn"
-          class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors border border-slate-200">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-            <path d="M3 3v5h5" />
-          </svg>
-          Reset Data
-        </button>
-      </div>
     </header>
 
-    <!-- Controls Section -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Add new data -->
+    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
 
-      <!-- Linear Search Card -->
+      <h2 class="font-semibold text-lg">Add New Student</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+
+        <input id="nameInput" type="text" placeholder="Student Name" class="px-4 py-2 border rounded-lg bg-slate-50" />
+
+        <input id="rollInput" type="number" placeholder="Roll" class="px-4 py-2 border rounded-lg bg-slate-50" />
+
+        <input id="cgpaInput" type="number" step="0.01" placeholder="CGPA"
+          class="px-4 py-2 border rounded-lg bg-slate-50" />
+
+      </div>
+
+      <button id="addStudentBtn" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Add Student
+      </button>
+
+    </div>
+    <!-- Controls Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- search card  -->
       <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
         <div class="flex items-center justify-between">
           <h2 class="font-semibold text-slate-800 flex items-center gap-2">
@@ -55,14 +64,13 @@
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
             </svg>
-            Search By CGPA
+            Search By Roll
           </h2>
-          <span id="searchComplexity"
-            class="text-[10px] font-mono bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full uppercase">O(n)</span>
         </div>
         <div class="relative">
-          <input type="text" id="searchInput" placeholder="Search Roll..."
+          <input type="text" id="searchInput_roll" placeholder="Search Roll..."
             class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all outline-none text-sm" />
+
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
@@ -78,41 +86,6 @@
             <path d="M12 8h.01" />
           </svg>
           <span>Using Linear Search</span>
-        </div>
-      </div>
-      <!-- Binary search card  -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
-        <div class="flex items-center justify-between">
-          <h2 class="font-semibold text-slate-800 flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="text-indigo-500">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
-            Search By Roll
-          </h2>
-          <span id="searchComplexity"
-            class="text-[10px] font-mono bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full uppercase">O(1)</span>
-        </div>
-        <div class="relative">
-          <input type="text" id="searchInput" placeholder="Search CGPA..."
-            class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all outline-none text-sm" />
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.3-4.3" />
-          </svg>
-        </div>
-        <div class="flex items-center gap-2 text-xs text-slate-500">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 16v-4" />
-            <path d="M12 8h.01" />
-          </svg>
-          <span>Using Binary Search</span>
         </div>
       </div>
 
@@ -175,7 +148,6 @@
       <!-- Footer Info -->
       <div
         class="bg-slate-50 px-6 py-3 border-t border-slate-200 flex justify-between items-center text-[10px] text-slate-400 font-mono uppercase tracking-widest">
-        <span id="recordCount">Showing 15 of 15 records</span>
       </div>
     </div>
   </div>
